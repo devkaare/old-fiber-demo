@@ -5,7 +5,7 @@ import "github.com/gofiber/fiber"
 // Dummy handler
 func handler() func(*fiber.Ctx) {
         return func(c *fiber.Ctx) {
-                c.Send("This is a dummy route")
+                c.Send([]byte("This is a dummy route"))
         }
 }
 
